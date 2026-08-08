@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<packaging>jar</packaging>
+
+	<parent>
+		<groupId>mz.mohitek.training25xxsample.portal.lab</groupId>
+    		<artifactId>training26XXappsecurity-grupo-x-demo-lab</artifactId>
+    		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>trainee25XXsample-portal-lab0</artifactId>
+	<dependencies>
+
+		<!--lab1- -->
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.15</version>
+		</dependency>
+
+		<!--unhide -->
+		<dependency>
+			<groupId>javax.persistence</groupId>
+			<artifactId>javax.persistence-api</artifactId>
+			<version>2.2</version>
+		</dependency>
+
+		<!--lab2-JSR317 jpa implementation remove <scope>provided</scope> to avoid 
+			CLASS NOT FOUND EXCEPTION -->
+		<dependency>
+			<groupId>org.eclipse.persistence</groupId>
+			<artifactId>org.eclipse.persistence.jpa.modelgen.processor</artifactId>
+			<version>2.5.2</version>
+		</dependency>
+
+		<!--lab2-JSR317 jpql implementation -->
+		<dependency>
+			<groupId>org.eclipse.persistence</groupId>
+			<artifactId>org.eclipse.persistence.jpa.jpql</artifactId>
+                        <version>2.5.2</version>
+                </dependency>
+
+		<!--lab2-JSR317 mysql connector 4j baeldung.com/java-jdbc-url-format|https://github.com/kohlschutter/junixsocket -->
+		<dependency>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<version>8.0.31</version>
+		</dependency>
+               
+		<!--Unit Test -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	<!--labName -->
+	<!--<name>softwaredevelopment-grupo-i-lab0-trainee24XXnomeapelido</name> -->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<target.class>mz.mohitek.trainee24xxsample.app.lab0.Main</target.class>
+	</properties>
+	<name>trainee26XXdemo210-appsecurity-lab0</name>
+</project>

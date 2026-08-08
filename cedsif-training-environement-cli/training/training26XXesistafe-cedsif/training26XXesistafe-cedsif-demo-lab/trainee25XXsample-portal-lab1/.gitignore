@@ -1,0 +1,14 @@
+#ignoring files
+*.save
+../*.save
+*./target/
+*../target/
+*.class
+.classpath
+*.swp
+/nbproject/
+.settings/
+/softwaredevelopment-lab**-grupo-**/nbproject/
+*.project
+*.log
+/softwaredevelopment-e**-grupo-**/nbproject/
