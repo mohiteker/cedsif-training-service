@@ -16,7 +16,7 @@ source sh/oe-environment-usermap.sh ${oe_aux_prefix}
 # TODO: waiting to deprecation. The configuration must be at external file.
 #This is a map of engine by.x=instance, X is the number of remote terminals/instances to be created. For each user we estabilished 2 scalable instances
 declare -A map=(
-	   ["cedsif"]="edx-platform=[ lms=0 cms=0 ] esistafe=[ securityframework=1 mex=0 mpe=0 ]"
+	   ["cedsif"]="edx-platform=[ lms=0 cms=0 ] esistafe=[ securityframework=1 mex=1 mpe=1 ]"
 )
 
 #set vars

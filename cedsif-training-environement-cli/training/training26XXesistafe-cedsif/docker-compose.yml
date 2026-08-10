@@ -10,7 +10,7 @@ services:
         - OE_CLI_SH=/usr/local/bin
         - APP_VERSION=v2026.01.01
         - BUILD_MODE=training
-        - trainingID=training26XXdaaid
+        - trainingID=training26XXesistafe
 
     image: localhost:50004/cedsif/training/esistafe26xxcedsif.gov.mz-image:v2026.01.01
     hostname: trainee26xxdemo1011-esistafe-cedsif-node1

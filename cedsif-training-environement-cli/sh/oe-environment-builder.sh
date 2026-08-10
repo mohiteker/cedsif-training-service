@@ -106,7 +106,7 @@ source $OE_CLI_SH/oe-environment-labmap.sh ${oe_prefix}
                                                 #
 						if [[ $oe_image =~ 'training' ]]; then
                                                 	oe_container_label="mz.${oe_prefix}.oe.trainee.name=${oe_port_ssh}"
-                                                	echo "Lable is: $oe_container_label"
+                                                	#echo "Lable is: $oe_container_label"
 							source $OE_CLI_SH/oe-environment-creator.sh #${oe_prefix} ${oe_image}
 						else
 							source $OE_CLI_SH/oe-logger.sh "oe-environment-builder" "WARNING: No Production images exists Yet. We are Planning to release."

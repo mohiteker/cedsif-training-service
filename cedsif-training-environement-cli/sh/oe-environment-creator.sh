@@ -1,5 +1,5 @@
 #!/bin/bash
-#created by shifu@mokikteker.net|shifu@mohitek.net
+#created by shifu@mohitek.net
 # on behalof mohitek-oengine=mohitek Orchestrator Engine
 #  --publish <PUBLISHED-PORT>:<SERVICE-PORT> flag. 
 #  docker service update --args "ping docker.com" helloworld
@@ -34,9 +34,11 @@ docker service create \
      --placement-pref "spread=node.labels.trainee.name" \
      --update-delay "2s" \
      --rollback-failure-action "continue" \
-     --limit-memory "4098MB" "${oe_image}"
-#     --constraint node.labels.trainee.name==demo${oe_port_ssh} \
-
+     --limit-memory "4098MB" "${oe_image}" \
+#     --constraint 'node.labels.trainee.name==demo${oe_port_ssh}' \
+     --constraint 'node.role==worker' \
+#     --constraint 'node.labels.storage==true' \
+#     --constraint 'node.hostname==node01' \
 source $OE_CLI_SH/oe-logger.sh "oe-environment-creator" "${oe_service_name} successfully created."
 docker service ls --filter name=${oe_service_name}
 
